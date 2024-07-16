@@ -12,19 +12,19 @@ public class activity_1 {
         driver.manage().window().maximize();
         driver.get("https://retail.tekschool-students.com");
 
-        By signInLocator = By.id("sign in");
+        By signInLocator = By.id("signInLink");
         WebElement signInElement=driver.findElement(signInLocator);
         signInElement.click();
 
-        By createNewAccount = By.id("create new account");
-        WebElement createNewAccountElement=driver.findElement(createNewAccount);
-        createNewAccountElement.click();
+        By NewAccountLocator = By.id("newAccount");
+        WebElement newAccountElement=driver.findElement(NewAccountLocator);
+        newAccountElement.click();
 
         By name = By.id("nameInput");
         WebElement nameElement = driver.findElement(name);
         nameElement.sendKeys("Mushtari");
 
-        By email = By.id("email input");
+        By email = By.id("emailInput");
         WebElement emailElm = driver.findElement(email);
         emailElm.sendKeys("m.saidjafaropva@gmail.com");
 
@@ -39,6 +39,10 @@ public class activity_1 {
         By signupBtn= By.id("signupBtn");
         WebElement signupBtnElm = driver.findElement(signupBtn);
         signupBtnElm.click();
+
+        driver.quit();
+
+
 
 
     }

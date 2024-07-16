@@ -16,5 +16,6 @@ public class activity_2 {
         By searchBtnLocator = By.id("search");
         WebElement searchBtnElement = driver.findElement(searchBtnLocator);
         searchBtnElement.click();
+        driver.quit();
     }
 }
